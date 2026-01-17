@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header role="banner">
+    <header>
         <div class="header-container">
             <a href="index.html" class="logo">
                 <img src="LogoRiki.png" alt="Logo" class="logo-img">
                 <span>Świat Psów</span>
             </a>
             <button class="mobile-menu-btn" id="menuBtn">☰</button>
-            <nav role="navigation" id="mainNav">
+            <nav id="mainNav">
                 <ul>
                     <li><a href="zywienie.html">Żywienie</a></li>
                     <li><a href="pielegnacja.html">Pielęgnacja</a></li>
@@ -28,60 +28,36 @@
     </header>
 
     <main class="container section">
-        <a href="index.html" class="back-button" style="margin-bottom: 2rem; display: inline-block;">← Powrót do strony głównej</a>
+        <a href="index.html" class="back-button">← Powrót do strony głównej</a>
+        <h2 class="section-title">Kontakt</h2>
         
-        <div class="contact-wrapper">
-            
-            <h3 class="contact-heading">Kontakt</h3>
-
-            <div class="contact-card">
-                <form id="contactForm" novalidate>
-                    
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko *</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                        <span class="form-error" id="nameError" style="color: #c0392b; font-size: 0.85rem; display: none; margin-top: 5px;">Proszę podać imię i nazwisko</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Adres e-mail *</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                        <span class="form-error" id="emailError" style="color: #c0392b; font-size: 0.85rem; display: none; margin-top: 5px;">Proszę podać prawidłowy adres e-mail</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Temat</label>
-                        <input type="text" id="subject" name="subject" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Wiadomość *</label>
-                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                        <span class="form-error" id="messageError" style="color: #c0392b; font-size: 0.85rem; display: none; margin-top: 5px;">Proszę wpisać wiadomość</span>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Wyślij wiadomość</button>
-                </form>
+        <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Imię i nazwisko *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="form-error" id="nameError">Proszę podać imię i nazwisko</span>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="form-error" id="emailError">Proszę podać prawidłowy adres e-mail</span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Temat</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość *</label>
+                <textarea id="message" name="message" required></textarea>
+                <span class="form-error" id="messageError">Proszę wpisać wiadomość</span>
+            </div>
+            <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+        </form>
     </main>
 
-    <footer role="contentinfo">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>O Nas</h4>
-                <p>Świat Psów - kompleksowy przewodnik.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Szybkie Linki</h4>
-                <ul>
-                   <li><a href="zywienie.html">Żywienie</a></li>
-                   <li><a href="pielegnacja.html">Pielęgnacja</a></li>
-                   <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom"><p>&copy; 2025 Świat Psów.</p></div>
+    <footer>
+        <p>Autorzy: Mateusz Kostkowski, Jakub Szamik</p>
+        <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script>
@@ -90,45 +66,52 @@
             document.getElementById('mainNav').classList.toggle('active');
         });
 
-        // Form Validation
+        // Walidacja formularza z pliku stary.html
         const form = document.getElementById('contactForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            let isValid = true;
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            // Reset errors
-            document.getElementById('nameError').style.display = 'none';
-            document.getElementById('emailError').style.display = 'none';
-            document.getElementById('messageError').style.display = 'none';
-            
-            // Walidacja Imienia
-            if (name === '') {
-                document.getElementById('nameError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Walidacja Emaila
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                document.getElementById('emailError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Walidacja Wiadomości
-            if (message === '') {
-                document.getElementById('messageError').style.display = 'block';
-                isValid = false;
-            }
-            
-            if (isValid) {
-                alert('Dziękujemy za wiadomość! Skontaktujemy się wkrótce.');
-                form.reset();
-            }
-        });
+        
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                let isValid = true;
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                // Reset errors
+                const nameError = document.getElementById('nameError');
+                const emailError = document.getElementById('emailError');
+                const messageError = document.getElementById('messageError');
+
+                if(nameError) nameError.style.display = 'none';
+                if(emailError) emailError.style.display = 'none';
+                if(messageError) messageError.style.display = 'none';
+                
+                // Walidacja Imienia
+                if (name === '') {
+                    if(nameError) nameError.style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Walidacja Emaila
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    if(emailError) emailError.style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Walidacja Wiadomości
+                if (message === '') {
+                    if(messageError) messageError.style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    alert('Dziękujemy za wiadomość! Skontaktujemy się wkrótce.');
+                    form.reset();
+                }
+            });
+        }
     </script>
 </body>
 </html>

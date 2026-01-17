@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header role="banner">
+    <header>
         <div class="header-container">
             <a href="index.html" class="logo" aria-label="Świat Psów - Strona główna">
                 <img src="LogoRiki.png" alt="Logo" class="logo-img">
@@ -20,7 +20,7 @@
                 ☰
             </button>
 
-            <nav role="navigation" id="mainNav">
+            <nav id="mainNav">
                 <ul>
                     <li><a href="zywienie.html">Żywienie</a></li>
                     <li><a href="pielegnacja.html">Pielęgnacja</a></li>
@@ -48,94 +48,155 @@
         <div class="search-results" id="searchResults"></div>
     </div>
 
-    <main role="main">
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Żywienie</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-icon">🍖</div>
-                        <div class="card-content">
-                            <h3>Zapotrzebowanie Kaloryczne</h3>
-                            <p>Poznaj wzory i sposoby obliczania dziennego zapotrzebowania kalorycznego.</p>
-                            <a href="zywienie.html#zywienie-kalorie" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-icon">✅</div>
-                        <div class="card-content">
-                            <h3>Co Mogą Jeść Psy?</h3>
-                            <p>Kompleksowa lista produktów dozwolonych i zakazanych w diecie psa.</p>
-                            <a href="zywienie.html#zywienie-produkty" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-icon">⚠️</div>
-                        <div class="card-content">
-                            <h3>Błędy i Mity</h3>
-                            <p>Obalamy najpopularniejsze mity dotyczące żywienia psów.</p>
-                            <a href="zywienie.html#zywienie-mity" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
+    <main>
+       <section id="zywienie-preview" class="section">
+                <div class="container">
+                    <h2 class="section-title">Żywienie</h2>
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card-icon">🍖</div>
+                            <div class="card-content">
+                                <h3>Zapotrzebowanie Kaloryczne</h3>
+                                <p>Poznaj wzory i sposoby obliczania dziennego zapotrzebowania kalorycznego Twojego psa w zależności od wieku, wagi i aktywności.</p>
+                                <a href="zywienie.html#zywienie-kalorie" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">✅</div>
+                            <div class="card-content">
+                                <h3>Co Mogą Jeść Psy?</h3>
+                                <p>Kompleksowa lista produktów dozwolonych i zakazanych w diecie psa. Dowiedz się, co jest bezpieczne dla Twojego pupila.</p>
+                                <a href="zywienie.html#zywienie-produkty" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">⚠️</div>
+                            <div class="card-content">
+                                <h3>Błędy i Mity</h3>
+                                <p>Obalamy najpopularniejsze mity dotyczące żywienia psów i pokazujemy najczęstsze błędy popełniane przez właścicieli naszych pupili.</p>
+                                <a href="zywienie.html#zywienie-mity" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section featured">
-            <div class="container">
-                <h2 class="section-title">Pielęgnacja</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-icon">👂</div>
-                        <div class="card-content">
-                            <h3>Zaglądanie do Uszu</h3>
-                            <p>Regularna kontrola i czyszczenie uszu to kluczowy element pielęgnacji.</p>
-                            <a href="pielegnacja.html#pielegnacja-uszy" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-icon">🛁</div>
-                        <div class="card-content">
-                            <h3>Mycie Psa</h3>
-                            <p>Dowiedz się, jak często i w jaki sposób prawidłowo myć swojego psa.</p>
-                            <a href="pielegnacja.html#pielegnacja-mycie" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-icon">✂️</div>
-                        <div class="card-content">
-                            <h3>Czesanie Sierści</h3>
-                            <p>Różne rodzaje sierści wymagają różnych technik czesania.</p>
-                            <a href="pielegnacja.html#pielegnacja-czesanie" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
+            <section id="pielegnacja-preview" class="section featured">
+                <div class="container">
+                    <h2 class="section-title">Pielęgnacja</h2>
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card-icon">👂</div>
+                            <div class="card-content">
+                                <h3>Zaglądanie do Uszu</h3>
+                                <p>Regularna kontrola i czyszczenie uszu to kluczowy element pielęgnacji psa.</p>
+                                <a href="pielegnacja.html#pielegnacja-uszy" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">🛁</div>
+                            <div class="card-content">
+                                <h3>Mycie Psa</h3>
+                                <p>Dowiedz się, jak często i w jaki sposób prawidłowo myć swojego psa.</p>
+                                <a href="pielegnacja.html#pielegnacja-mycie" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">✂️</div>
+                            <div class="card-content">
+                                <h3>Czesanie Sierści</h3>
+                                <p>Różne rodzaje sierści wymagają różnych technik czesania i pielęgnacji.</p>
+                                <a href="pielegnacja.html#pielegnacja-czesanie" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Zdrowie</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-icon">💉</div>
-                        <div class="card-content">
-                            <h3>Szczepienia i Badania</h3>
-                            <p>Harmonogram rutynowych szczepień i badań profilaktycznych.</p>
-                            <a href="zdrowie.html#zdrowie-szczepienia" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-icon">⚖️</div>
-                        <div class="card-content">
-                            <h3>Prawidłowa Waga</h3>
-                            <p>Problem otyłości u psów i sposoby na utrzymanie zdrowej wagi.</p>
-                            <a href="zdrowie.html#zdrowie-waga" class="card-link">Czytaj więcej →</a>
-                        </div>
-                    </article>
+            <section id="zdrowie-preview" class="section">
+                <div class="container">
+                    <h2 class="section-title">Zdrowie</h2>
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card-icon">💉</div>
+                            <div class="card-content">
+                                <h3>Szczepienia i Badania</h3>
+                                <p>Harmonogram rutynowych szczepień i badań profilaktycznych dla Twojego czworonożnego przyjaciela.</p>
+                                <a href="zdrowie.html#zdrowie-szczepienia" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">⚖️</div>
+                            <div class="card-content">
+                                <h3>Prawidłowa Waga</h3>
+                                <p>Problem otyłości u psów staje się epidemią. Poznaj sposoby na utrzymanie zdrowej wagi.</p>
+                                <a href="zdrowie.html#zdrowie-waga" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section id="poradniki-preview" class="section featured">
+                <div class="container">
+                    <h2 class="section-title">Poradniki</h2>
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card-icon">🎓</div>
+                            <div class="card-content">
+                                <h3>Podstawy Treningu</h3>
+                                <p>Podstawowe porady treningowe dla początkujących właścicieli.</p>
+                                <a href="poradniki.html#poradniki-trening" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">🐾</div>
+                            <div class="card-content">
+                                <h3>Socjalizacja Psa</h3>
+                                <p>Jak prawidłowo socjalizować psa z innymi zwierzętami i ludźmi.</p>
+                                <a href="poradniki.html#poradniki-socjalizacja" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">🏠</div>
+                            <div class="card-content">
+                                <h3>Hodowla czy Schronisko?</h3>
+                                <p>Plusy i minusy zakupu psa z hodowli oraz adopcji ze schroniska.</p>
+                                <a href="poradniki.html#poradniki-wybor" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">🐕‍🦺</div>
+                            <div class="card-content">
+                                <h3>Drugi Pies w Domu</h3>
+                                <p>Jak bezpiecznie wprowadzić drugiego lub kolejnego psa do domu bez problemów?</p>
+                                <a href="poradniki.html#poradniki-drugi-pies" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card-icon">🔄</div>
+                            <div class="card-content">
+                                <h3>Pies w obliczu zmian</h3>
+                                <p>Zmiany w rodzinie mogą być stresujące dla psa. Poznaj sposoby na łagodne wprowadzenie zmian i wsparcie pupila</p>
+                                <a href="poradniki.html#poradniki-zmiany" class="card-link">Czytaj więcej →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rasy-preview" class="section">
+                <div class="container">
+                    <h2 class="section-title">Spis Ras</h2>
+                    <div style="text-align: center; padding: 2rem;">
+                        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Przeglądaj oficjalną Polską bazę ras psów uznawanych przez Międzynarodową Federację Kynologiczną (FCI)</p>
+                        <a href="https://zkwp.pl/wzorce.php" target="_blank" rel="noopener noreferrer" class="card-link" style="font-size: 1.1rem;">
+                            Przejdź do Polskiej bazy FCI →
+                        </a>
+                    </div>
+                </div>
+            </section>
 
         <section class="section featured">
             <div class="container">
@@ -147,33 +208,10 @@
             </div>
         </section>
     </main>
-
-    <footer role="contentinfo">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>O Nas</h4>
-                <p>Świat Psów to kompleksowy przewodnik stworzony przez pasjonatów psów.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Szybkie Linki</h4>
-                <ul>
-                    <li><a href="zywienie.html">Żywienie</a></li>
-                    <li><a href="pielegnacja.html">Pielęgnacja</a></li>
-                    <li><a href="zdrowie.html">Zdrowie</a></li>
-                    <li><a href="poradniki.html">Poradniki</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Kontakt</h4>
-                <p>Email: kontakt@swiatpsow.pl</p>
-                <div class="social-links">
-                    <a href="#">📘</a><a href="#">📷</a><a href="#">📺</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Świat Psów.</p>
-        </div>
+	
+    <footer>
+        <p>Autorzy: Mateusz Kostkowski, Jakub Szamik</p>
+        <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script>
@@ -185,7 +223,7 @@
             btn.setAttribute('aria-expanded', nav.classList.contains('active'));
         });
 
-        // Search Script
+        // Search Script - ZAKTUALIZOWANE ID
         const searchableContent = [
             { title: 'Zapotrzebowanie Kaloryczne', page: 'zywienie.html', hash: 'zywienie-kalorie', keywords: 'żywienie kalorie energia karma' },
             { title: 'Co Mogą Jeść Psy', page: 'zywienie.html', hash: 'zywienie-produkty', keywords: 'żywienie produkty jedzenie dieta' },
@@ -197,9 +235,11 @@
             { title: 'Prawidłowa Waga', page: 'zdrowie.html', hash: 'zdrowie-waga', keywords: 'zdrowie waga otyłość dieta' },
             { title: 'Podstawy Treningu', page: 'poradniki.html', hash: 'poradniki-trening', keywords: 'poradniki trening nauka komendy' },
             { title: 'Socjalizacja Psa', page: 'poradniki.html', hash: 'poradniki-socjalizacja', keywords: 'poradniki socjalizacja adaptacja' },
-            { title: 'Hodowla czy Schronisko', page: 'poradniki.html', hash: 'poradniki-adopcja', keywords: 'poradniki adopcja hodowla schronisko' },
+            // ZMIANA: hash 'poradniki-adopcja' zmieniony na 'poradniki-wybor'
+            { title: 'Hodowla czy Schronisko', page: 'poradniki.html', hash: 'poradniki-wybor', keywords: 'poradniki adopcja hodowla schronisko' },
             { title: 'Drugi Pies w Domu', page: 'poradniki.html', hash: 'poradniki-drugi-pies', keywords: 'poradniki drugi pies wprowadzenie' },
-            { title: 'Pojawienie się Dziecka', page: 'poradniki.html', hash: 'poradniki-dziecko', keywords: 'poradniki dziecko rodzina' },
+            // ZMIANA: hash 'poradniki-dziecko' zmieniony na 'poradniki-zmiany'
+            { title: 'Pojawienie się Dziecka', page: 'poradniki.html', hash: 'poradniki-zmiany', keywords: 'poradniki dziecko rodzina' },
             { title: 'Zmiany w Rodzinie', page: 'poradniki.html', hash: 'poradniki-zmiany', keywords: 'poradniki rodzina zmiany adaptacja' }
         ];
 

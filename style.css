@@ -1,5 +1,4 @@
-/* style.css */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,22 +46,18 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Odstęp między obrazkiem a napisem */
+    gap: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
 }
 
-/* Styl dla obrazka logo */
-/* Styl dla obrazka logo */
 .logo-img {
-    height: 65px; /* ZMIANA: Zwiększono z 50px na 65px */
-    width: auto;  /* Szerokość dopasuje się sama */
+    height: 65px;
+    width: auto;
     object-fit: contain;
 }
-
-
 
 nav ul {
     display: flex;
@@ -195,18 +190,6 @@ nav a:hover, nav a.active {
     display: block;
 }
 
-/* Responsywność dla wyszukiwarki */
-@media (max-width: 768px) {
-    .search-box {
-        flex-direction: column;
-        padding: 1rem;
-    }
-    
-    .search-btn {
-        width: 100%;
-    }
-}
-
 /* Main Content */
 main {
     flex: 1;
@@ -214,6 +197,7 @@ main {
 
 .container {
     max-width: 1200px;
+	width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -375,75 +359,89 @@ main {
     background: var(--bg-light);
 }
 
-/* Footer */
-footer {
+/* Style formularza z pliku stary.html */
+.contact-form {
+    max-width: 600px; /* ZMIEŃ NA width: 100%; JEŚLI CHCESZ SZEROKI FORMULARZ */
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
     background: var(--primary-color);
     color: var(--white);
-    padding: 3rem 2rem 1rem;
-    margin-top: auto;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-section h4 {
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section a {
-    color: var(--white);
-    text-decoration: none;
-    display: block;
-    padding: 0.3rem 0;
-    transition: color 0.3s;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-}
-
-.footer-section a:hover {
-    color: var(--secondary-color);
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.2rem;
     transition: background 0.3s;
 }
 
-.social-links a:hover {
-    background: var(--secondary-color);
+.submit-btn:hover {
+    background: #1a3a1b;
 }
 
-.footer-bottom {
+/* --- ZAKTUALIZOWANA MAŁA STOPKA --- */
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
     text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 852px) {
     .header-container {
         padding: 1rem;
     }
@@ -497,28 +495,6 @@ footer {
     .cards-grid {
         grid-template-columns: 1fr;
     }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
-    }
-
-    .section {
-        padding: 2rem 0;
-    }
-
-    .hero {
-        padding: 3rem 1rem;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
 }
 
 *:focus {
@@ -527,7 +503,6 @@ footer {
 }
 
 /* --- Style dla podstrony Żywienie (Tabelki i Wzory) --- */
-
 .formula-box {
     background-color: #f0f7f1;
     border: 2px solid var(--primary-color);
@@ -589,7 +564,6 @@ footer {
 }
 
 /* --- Style dla listy produktów (Żywienie) --- */
-
 .food-lists-container {
     display: flex;
     flex-wrap: wrap;
@@ -655,7 +629,6 @@ footer {
 }
 
 /* --- Style dla sekcji Błędy i Mity --- */
-
 .myths-container {
     background-color: transparent;
     padding: 0;
@@ -693,7 +666,6 @@ footer {
 }
 
 /* --- Style dla sekcji Pielęgnacja (Uszy) --- */
-
 .ear-section-container {
     display: flex;
     flex-wrap: wrap;
@@ -844,90 +816,14 @@ footer {
     }
 }
 
-/* --- Style dla sekcji Kontakt (NAPRAWIONE) --- */
-
-.contact-wrapper {
-    max-width: 900px; /* ZMIANA: Zwiększono z 600px na 900px, żeby formularz był szeroki */
-    width: 100%;
-    margin: 0 auto;
+/* --- Poprawka układu dla sekcji Poradniki (Flexbox) --- */
+#poradniki-preview .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.contact-heading {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact-heading::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #8bc34a;
-    margin: 10px auto 0;
-}
-
-.contact-card {
-    background-color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    border: 1px solid #f0f0f0;
-}
-
-/* Style formularza */
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.form-control {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: inherit;
-    transition: border-color 0.3s;
-    background-color: #fff;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-textarea.form-control {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #2e5c33;
-    color: white;
-    border: none;
-    padding: 14px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 1rem;
-}
-
-.btn-submit:hover {
-    background-color: #234726;
+#poradniki-preview .card {
+    flex: 1 1 300px;
+    max-width: 100%;
 }
