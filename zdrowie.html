@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdrowie Psów - Świat Psów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="LogoRiki.png" alt="Logo" class="logo-img">
+                <span>Świat Psów</span>
+            </a>
+            <button class="mobile-menu-btn" id="menuBtn">☰</button>
+            <nav role="navigation" id="mainNav">
+                <ul>
+                    <li><a href="zywienie.html">Żywienie</a></li>
+                    <li><a href="pielegnacja.html">Pielęgnacja</a></li>
+                    <li><a href="zdrowie.html" class="active">Zdrowie</a></li>
+                    <li><a href="poradniki.html">Poradniki</a></li>
+                    <li><a href="spis.html">Spis Ras</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <a href="index.html" class="back-button">← Powrót do strony głównej</a>
+        <h2 class="section-title">Zdrowie Psów</h2>
+        
+        <div id="zdrowie-szczepienia" class="subpage-content">
+            <h3>Rutynowe Szczepienia i Badania</h3>
+            <p>Regularna profilaktyka to podstawa długiego i zdrowego życia Twojego psa. Poniżej znajdziesz harmonogram podstawowych badań i zabiegów.</p>
+            
+            <ul class="health-schedule">
+                <li>
+                    <strong>Raz w roku</strong>
+                    Morfologia krwi (z biochemią lub bez) oraz szczepienie przeciw wściekliźnie (jest to szczepienie obowiązkowe w Polsce).
+                </li>
+                <li>
+                    <strong>Co 3-6 miesięcy</strong>
+                    Regularne odrobaczanie lub badanie kału co pół roku (pozwala wykryć pasożyty bez podawania leków "w ciemno").
+                </li>
+                <li>
+                    <strong>Co 2 lata</strong>
+                    Szczepienie przeciw chorobom zakaźnym (nieobowiązkowe, ale zalecane dla pełnej ochrony).
+                </li>
+                <li>
+                    <strong>Cały rok</strong>
+                    Ochrona przed kleszczami i pchłami – stosuj tabletki, krople lub obroże nieprzerwanie przez cały rok.
+                </li>
+                <li>
+                    <strong>Indywidualnie</strong>
+                    Pozostałe badania wykonuj w zależności od konkretnych wskazań weterynarza lub predyspozycji danej rasy.
+                </li>
+            </ul>
+        </div>
+
+        <div id="zdrowie-waga" class="subpage-content">
+            <h3>Utrzymanie Odpowiedniej Wagi</h3>
+            
+            <p style="margin-bottom: 2rem;">
+                Otyłość jest obecnie powszechnym problemem zdrowotnym u psów. 
+                Może to prowadzić do wielu poważnych problemów zdrowotnych, takich jak choroby serca, cukrzyca, 
+                choroby stawów czy problemy z układem oddechowym.
+            </p>
+
+            <div style="background: var(--bg-light); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h4 style="text-align: center; color: var(--primary-color); margin-bottom: 1.5rem;">Jak oceniamy sylwetkę psa?</h4>
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="waga-psa.png" alt="Schemat oceny wagi psa - widok z góry i z boku" style="max-width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    
+                    <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #27ae60;">
+                        <h5 style="color: #27ae60; font-size: 1.1rem; margin-bottom: 1rem;">✅ Waga Prawidłowa</h5>
+                        <ul style="padding-left: 1.2rem; font-size: 0.95rem; color: var(--text-light);">
+                            <li>Żebra łatwo wyczuwalne i widoczne z boku.</li>
+                            <li>Wcięcie w pasie lekko zaznaczone, widoczne od góry.</li>
+                            <li>Brzuch podkasany (nieobwisły).</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #f39c12;">
+                        <h5 style="color: #f39c12; font-size: 1.1rem; margin-bottom: 1rem;">⚠️ Nadwaga</h5>
+                        <ul style="padding-left: 1.2rem; font-size: 0.95rem; color: var(--text-light);">
+                            <li>Żebra pokryte tłuszczem, słabo wyczuwalne.</li>
+                            <li>Brak wyraźnego wcięcia w pasie.</li>
+                            <li>Brzuch lekko obwisły lub prosty.</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #c0392b;">
+                        <h5 style="color: #c0392b; font-size: 1.1rem; margin-bottom: 1rem;">⛔ Otyłość</h5>
+                        <ul style="padding-left: 1.2rem; font-size: 0.95rem; color: var(--text-light);">
+                            <li>Żebra pokryte grubą warstwą tkanki tłuszczowej, niewyczuwalne.</li>
+                            <li>Sylwetka zaokrąglona, "beczka" patrząc od góry.</li>
+                            <li>Duży, obwisły brzuch.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="border-left: 4px solid var(--primary-color); padding: 1rem; background-color: #f0f7f1;">
+                <strong>Czy wiesz, że?</strong>
+                <p style="margin: 0.5rem 0 0;">
+                    Wielu właścicieli błędnie postrzega psa z nadwagą jako posiadającego "odpowiednią sylwetkę". 
+                    Obiektywna ocena jest kluczowa dla zdrowia pupila.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>O Nas</h4>
+                <p>Świat Psów - kompleksowy przewodnik.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Szybkie Linki</h4>
+                <ul>
+                   <li><a href="zywienie.html">Żywienie</a></li>
+                   <li><a href="pielegnacja.html">Pielęgnacja</a></li>
+                   <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Świat Psów.</p></div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pielęgnacja Psów - Świat Psów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="LogoRiki.png" alt="Logo" class="logo-img">
+                <span>Świat Psów</span>
+            </a>
+            <button class="mobile-menu-btn" id="menuBtn">☰</button>
+            <nav role="navigation" id="mainNav">
+                <ul>
+                    <li><a href="zywienie.html">Żywienie</a></li>
+                    <li><a href="pielegnacja.html" class="active">Pielęgnacja</a></li>
+                    <li><a href="zdrowie.html">Zdrowie</a></li>
+                    <li><a href="poradniki.html">Poradniki</a></li>
+                    <li><a href="spis.html">Spis Ras</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <a href="index.html" class="back-button">← Powrót do strony głównej</a>
+        <h2 class="section-title">Pielęgnacja Psów</h2>
+        
+        <div id="pielegnacja-uszy" class="subpage-content">
+            <h3>Higiena i Zdrowie Uszu</h3>
+            
+            <div class="ear-section-container">
+                <div class="ear-image-box" style="flex: 2;">
+                    <img src="ucho-schemat.png" alt="Schemat budowy ucha psa" loading="lazy" style="width: 100%; border-radius: 8px;">
+                </div>
+
+                <div class="ear-info-box" style="flex: 1.5; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="care-instructions" style="margin-top: 0;">
+                        <h4>Jak dbać o uszy?</h4>
+                        <p>
+                            Regularna kontrola jest kluczowa (szczególnie u psów z opadającymi uszami). 
+                            Raz w tygodniu sprawdź, czy wnętrze ucha jest czyste i różowe.
+                        </p>
+                        
+                        <div style="margin-top: 1.5rem; padding-top: 1rem;">
+                            <strong style="color: #d35400; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Kiedy do weterynarza?</strong>
+                            <p style="margin: 0;">
+                                Jeśli pojawiła się wydzielina lub czuć nieprzyjemny zapach należy udać się do weterynarza, 
+                                gdyż może to oznaczać infekcję, a nawet zapalenie ucha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pielegnacja-mycie" class="subpage-content">
+            <h3>Mycie Psa</h3>
+            
+            <div style="margin-bottom: 2rem;">
+                <p>Psa wystarczy umyć raz na kilka miesięcy (chyba że weterynarz zarządzi inaczej, np. w przypadku chorób skóry lub uczuleń).</p>
+                <p>
+                    Należy do tego użyć szamponów przeznaczonych do psiej sierści i skóry. 
+                    <strong>Nie wolno używać ludzkich środków higieny, gdyż mogą podrażniać.</strong> 
+                    Psa należy myć letnią wodą.
+                </p>
+            </div>
+
+            <div class="care-instructions">
+                <h4>Jak prawidłowo umyć psa?</h4>
+                <ol style="margin-left: 1.5rem; line-height: 1.8;">
+                    <li>Wyczesać psa (szczególnie jeśli jest długowłosy, aby ograniczyć plątanie się sierści podczas kąpieli).</li>
+                    <li>Zmoczyć sierść psa letnią wodą.</li>
+                    <li>Spienić w dłoniach szampon dla psa i dokładnie, ale delikatnie wyszorować nim psa.</li>
+                    <li>Spłukać szampon letnią wodą.</li>
+                    <li>Delikatnie wytrzeć psa ręcznikiem, aby usunąć większość wody z sierści.</li>
+                    <li>Jeśli pies czuje się wystarczająco komfortowo, można użyć suszarki <strong>z chłodnym nawiewem</strong>.</li>
+                    <li>Nie powinno się świeżo umytego (mokrego) psa wypuszczać na dwór.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="pielegnacja-czesanie" class="subpage-content">
+            <h3>Czesanie Sierści</h3>
+            
+            <div class="care-instructions">
+                <p>Częstotliwość czesania i rodzaj narzędzi zależy od typu sierści Twojego psa. Warto dopasować szczotkę indywidualnie, ponieważ sierść może być bardzo różnorodna (dłuższa, krótsza, miękka, sztywna).</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                    <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Psy Długowłose</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Częstotliwość:</strong> Codziennie</li>
+                            <li><strong>Narzędzie:</strong> Najlepsza będzie szczotka typu zgrzebło</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Psy Krótkowłose</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Częstotliwość:</strong> Min. 1 raz w tygodniu</li>
+                            <li><strong>Narzędzie:</strong> Powinna wystarczyć standardowa szczotka</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>Co zrobić, gdy pies nie współpracuje?</h4>
+                <p>Jeśli Twój pupili nie przepada za czesaniem, spróbuj poniższych metod:</p>
+                <ul style="margin-left: 1.5rem; line-height: 1.6;">
+                    <li>Daj psu smakołyk, którym zajmie się na dłużej (np. mata do lizania).</li>
+                    <li>Postaw psa na podwyższeniu (np. stabilny stół) – często ogranicza to chęć ucieczki.</li>
+                    <li>Przywiąż psa do bezpiecznego elementu, abyś miał dwie ręce wolne.</li>
+                </ul>
+                <p style="margin-top: 1rem; font-weight: 500;">Pamiętaj: Najważniejszym jest jednak, aby maksymalnie zadbać o komfort zwierzaka.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>O Nas</h4>
+                <p>Świat Psów - kompleksowy przewodnik.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Szybkie Linki</h4>
+                <ul>
+                   <li><a href="zywienie.html">Żywienie</a></li>
+                   <li><a href="pielegnacja.html">Pielęgnacja</a></li>
+                   <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Świat Psów.</p></div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

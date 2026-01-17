@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Żywienie Psów - Świat Psów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="LogoRiki.png" alt="Logo" class="logo-img">
+                
+                <span>Świat Psów</span>
+            </a>
+            <button class="mobile-menu-btn" id="menuBtn">☰</button>
+            <nav role="navigation" id="mainNav">
+                <ul>
+                    <li><a href="zywienie.html" class="active">Żywienie</a></li>
+                    <li><a href="pielegnacja.html">Pielęgnacja</a></li>
+                    <li><a href="zdrowie.html">Zdrowie</a></li>
+                    <li><a href="poradniki.html">Poradniki</a></li>
+                    <li><a href="spis.html">Spis Ras</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <a href="index.html" class="back-button">← Powrót do strony głównej</a>
+        <h2 class="section-title">Żywienie Psów</h2>
+        
+        <div id="zywienie-kalorie" class="subpage-content">
+            <h3>Wzory na Zapotrzebowanie Kaloryczne</h3>
+            
+            <p>Aby prawidłowo obliczyć ile kalorii potrzebuje Twój pies, musimy obliczyć jego <strong>Dzienne Zapotrzebowanie na Energię (DER)</strong>. Poniżej znajduje się oficjalny wzór oraz tabele współczynników niezbędne do obliczeń.</p>
+
+            <div class="formula-box">
+                <p>Wzór na Dzienną Przemianę Materii:</p>
+                <div class="formula-text">
+                    DER = masa ciała <sup>0.75</sup> * K
+                </div>
+                <p>Gdzie <strong>K</strong> – to współczynnik określający poziom aktywności fizycznej, status fizjologiczny czy oddechowy właściwy dla danego zwierzęcia.</p>
+            </div>
+
+            <h4>Współczynnik K dla Szczeniąt</h4>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Etap rozwoju</th>
+                        <th>Współczynnik K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Od odsadzenia do uzyskania 50% masy ciała dorosłego psa</td>
+                        <td>3.0</td>
+                    </tr>
+                    <tr>
+                        <td>50-80% masy ciała dorosłego psa</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>80-100% masy ciała dorosłego psa</td>
+                        <td>2.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Współczynnik K dla Psów Dorosłych</h4>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Stan fizjologiczny / Aktywność</th>
+                        <th>Współczynnik K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kastrowane</td>
+                        <td>1.6</td>
+                    </tr>
+                    <tr>
+                        <td>Niekastrowane</td>
+                        <td>1.8</td>
+                    </tr>
+                    <tr>
+                        <td>Otyłe, mało aktywne</td>
+                        <td>1.4</td>
+                    </tr>
+                    <tr>
+                        <td>W trakcie odchudzania</td>
+                        <td>1.0</td>
+                    </tr>
+                    <tr>
+                        <td>W intensywnej terapii</td>
+                        <td>1.0</td>
+                    </tr>
+                    <tr>
+                        <td>Odzyskiwanie masy ciała w okresie rekonwalescencji</td>
+                        <td>1.2 - 1.4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="zywienie-produkty" class="subpage-content">
+            <h3>Lista Produktów Dozwolonych i Zakazanych</h3>
+            <p>Poniżej znajdziesz szczegółowe zestawienie produktów spożywczych. Pamiętaj, że nawet dozwolone produkty powinny być podawane z umiarem, a w razie wątpliwości zawsze skonsultuj się z weterynarzem.</p>
+            
+            <div class="food-lists-container">
+                <div class="food-column allowed">
+                    <h4>✅ Co pies MOŻE jeść</h4>
+                    <ul class="food-list">
+                        <li>Jabłka (bez nasion)</li>
+                        <li>Banany</li>
+                        <li>Jagody</li>
+                        <li>Melon</li>
+                        <li>Marchew</li>
+                        <li>Kurczak (ugotowany, bez kości)</li>
+                        <li>Jaja (ugotowane)</li>
+                        <li>Zielony groszek</li>
+                        <li>Miód (w małych ilościach)</li>
+                        <li>Kiwi</li>
+                        <li>Mango</li>
+                        <li>Brzoskwinie (bez pestek)</li>
+                        <li>Gruszki</li>
+                        <li>Ananas</li>
+                        <li>Dynia</li>
+                        <li>Ziemniaki (tylko ugotowane)</li>
+                        <li>Bataty</li>
+                        <li>Ryż</li>
+                        <li>Płatki owsiane</li>
+                        <li>Jogurt naturalny</li>
+                        <li>Ser (w małych ilościach)</li>
+                        <li>Masło orzechowe (bez ksylitolu)</li>
+                    </ul>
+                </div>
+
+                <div class="food-column forbidden">
+                    <h4>⛔ Czego pies NIE MOŻE jeść</h4>
+                    <ul class="food-list">
+                        <li>Czekolada i kakao</li>
+                        <li>Alkohol</li>
+                        <li>Kawa i kofeina</li>
+                        <li>Herbata</li>
+                        <li>Cebula i szczypiorek</li>
+                        <li>Czosnek</li>
+                        <li>Winogrona i rodzynki</li>
+                        <li>Awokado</li>
+                        <li>Orzechy makadamia</li>
+                        <li>Orzechy włoskie</li>
+                        <li>Ksylitol (słodzik, np. w gumach do żucia)</li>
+                        <li>Guma do żucia</li>
+                        <li>Surowe ciasto (drożdżowe)</li>
+                        <li>Surowe ziemniaki i obierki</li>
+                        <li>Grzyby</li>
+                        <li>Rabarbar</li>
+                        <li>Pestki i nasiona owoców</li>
+                        <li>Mleko (większość psów nie trawi laktozy)</li>
+                        <li>Okrawki tłuszczu</li>
+                        <li>Słone jedzenie i przekąski</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="zywienie-mity" class="subpage-content">
+            <h3>Błędy i Mity Dotyczące Żywienia Psów</h3>
+            
+            <p class="section-description">
+                Wokół żywienia psów narosło wiele szkodliwych przekonań. Poniżej przedstawiamy listę najczęstszych błędów, których należy unikać, aby Twój pies cieszył się zdrowiem.
+            </p>
+            
+            <div class="myths-container">
+                <ul class="myths-list">
+                    <li>
+                        <strong>Podawanie kości</strong> – to jeden z najczęstszych mitów ("pies musi jeść kości"). W rzeczywistości kości (zwłaszcza gotowane) mogą być niebezpieczne, prowadzić do zadławień lub uszkodzeń jelit.
+                    </li>
+                    <li>
+                        <strong>Dieta BARF bez wiedzy</strong> – stosowanie diety surowej (BARF) bez odpowiedniego zbilansowania i suplementacji może prowadzić do poważnych niedoborów.
+                    </li>
+                    <li>
+                        <strong>Nadmierna suplementacja</strong> – podawanie witamin i suplementów "na wszelki wypadek" bez konsultacji z weterynarzem może bardziej zaszkodzić niż pomóc.
+                    </li>
+                    <li>
+                        <strong>Karmienie psa "na oko"</strong> – brak odmierzania porcji to najkrótsza droga do nadwagi lub niedożywienia.
+                    </li>
+                    <li>
+                        <strong>Niewliczanie "smaczków" do bilansu</strong> – przysmaki treningowe i gryzaki też mają kalorie! Zbyt duża ich ilość prowadzi do otyłości.
+                    </li>
+                    <li>
+                        <strong>"Pies może jeść to samo co człowiek"</strong> – to groźny mit. Ludzkie jedzenie często zawiera przyprawy, sól i składniki toksyczne dla psów (np. cebula).
+                    </li>
+                    <li>
+                        <strong>Najpopularniejsze karmy są najlepsze</strong> – popularność marki i reklamy w TV nie zawsze idą w parze z jakością składu karmy.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>O Nas</h4>
+                <p>Świat Psów - kompleksowy przewodnik.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Szybkie Linki</h4>
+                <ul>
+                   <li><a href="zywienie.html">Żywienie</a></li>
+                   <li><a href="pielegnacja.html">Pielęgnacja</a></li>
+                   <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Świat Psów.</p></div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
