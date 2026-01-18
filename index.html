@@ -191,7 +191,7 @@
                 <div class="container">
                     <h2 class="section-title">Spis Ras</h2>
                     <div style="text-align: center; padding: 2rem;">
-                        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Przeglądaj oficjalną Polską bazę ras psów uznawanych przez Międzynarodową Federację Kynologiczną (FCI)</p>
+                        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Przeglądaj oficjalną Polską bazę ras psów uznawanych przez Międzynarodową Federację Kynologiczna (FCI)</p>
                         <a href="https://zkwp.pl/wzorce.php" target="_blank" rel="noopener noreferrer" class="card-link" style="font-size: 1.1rem;">
                             Przejdź do Polskiej bazy FCI →
                         </a>
@@ -215,91 +215,6 @@
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
 	<button id="backToTopBtn" aria-label="Powrót do góry">↑</button>
-    <script>
-        // Mobile Menu Script
-        document.getElementById('menuBtn').addEventListener('click', () => {
-            const nav = document.getElementById('mainNav');
-            const btn = document.getElementById('menuBtn');
-            nav.classList.toggle('active');
-            btn.setAttribute('aria-expanded', nav.classList.contains('active'));
-        });
-
-        // Search Script - ZAKTUALIZOWANE ID
-        const searchableContent = [
-            { title: 'Zapotrzebowanie Kaloryczne', page: 'zywienie.html', hash: 'zywienie-kalorie', keywords: 'żywienie kalorie energia karma' },
-            { title: 'Co Mogą Jeść Psy', page: 'zywienie.html', hash: 'zywienie-produkty', keywords: 'żywienie produkty jedzenie dieta' },
-            { title: 'Błędy i Mity Żywienia', page: 'zywienie.html', hash: 'zywienie-mity', keywords: 'żywienie mity błędy' },
-            { title: 'Zaglądanie do Uszu', page: 'pielegnacja.html', hash: 'pielegnacja-uszy', keywords: 'pielęgnacja uszy czyszczenie' },
-            { title: 'Mycie Psa', page: 'pielegnacja.html', hash: 'pielegnacja-mycie', keywords: 'pielęgnacja mycie kąpiel szampon' },
-            { title: 'Czesanie Sierści', page: 'pielegnacja.html', hash: 'pielegnacja-czesanie', keywords: 'pielęgnacja czesanie sierść szczotka' },
-            { title: 'Szczepienia i Badania', page: 'zdrowie.html', hash: 'zdrowie-szczepienia', keywords: 'zdrowie szczepienia badania weterynarz' },
-            { title: 'Prawidłowa Waga', page: 'zdrowie.html', hash: 'zdrowie-waga', keywords: 'zdrowie waga otyłość dieta' },
-            { title: 'Podstawy Treningu', page: 'poradniki.html', hash: 'poradniki-trening', keywords: 'poradniki trening nauka komendy' },
-            { title: 'Socjalizacja Psa', page: 'poradniki.html', hash: 'poradniki-socjalizacja', keywords: 'poradniki socjalizacja adaptacja' },
-            // ZMIANA: hash 'poradniki-adopcja' zmieniony na 'poradniki-wybor'
-            { title: 'Hodowla czy Schronisko', page: 'poradniki.html', hash: 'poradniki-wybor', keywords: 'poradniki adopcja hodowla schronisko' },
-            { title: 'Drugi Pies w Domu', page: 'poradniki.html', hash: 'poradniki-drugi-pies', keywords: 'poradniki drugi pies wprowadzenie' },
-            // ZMIANA: hash 'poradniki-dziecko' zmieniony na 'poradniki-zmiany'
-            { title: 'Pojawienie się Dziecka', page: 'poradniki.html', hash: 'poradniki-zmiany', keywords: 'poradniki dziecko rodzina' },
-            { title: 'Zmiany w Rodzinie', page: 'poradniki.html', hash: 'poradniki-zmiany', keywords: 'poradniki rodzina zmiany adaptacja' }
-        ];
-
-        function performSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            const resultsContainer = document.getElementById('searchResults');
-            
-            if (query.length < 2) {
-                resultsContainer.classList.remove('active');
-                return;
-            }
-
-            const results = searchableContent.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.keywords.toLowerCase().includes(query)
-            );
-
-            if (results.length > 0) {
-                resultsContainer.innerHTML = '<h4 style="margin-bottom: 1rem; color: var(--primary-color);">Znalezione wyniki:</h4>';
-                results.forEach(result => {
-                    const div = document.createElement('div');
-                    div.className = 'search-result-item';
-                    div.innerHTML = `<h4>${result.title}</h4><p>Kliknij, aby przejść do tej sekcji</p>`;
-                    div.onclick = () => {
-                        window.location.href = `${result.page}#${result.hash}`;
-                    };
-                    resultsContainer.appendChild(div);
-                });
-                resultsContainer.classList.add('active');
-            } else {
-                resultsContainer.innerHTML = '<p style="padding: 1rem;">Nie znaleziono wyników.</p>';
-                resultsContainer.classList.add('active');
-            }
-        }
-
-        document.getElementById('searchBtn').addEventListener('click', performSearch);
-        document.getElementById('searchInput').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') performSearch();
-        });
-		/* Kod do obsługi przycisku Back to Top */
-    const backToTopBtn = document.getElementById('backToTopBtn');
-    
-    // Pokaż przycisk, gdy użytkownik przewinie stronę w dół o 200px
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
-            backToTopBtn.style.display = 'block';
-        } else {
-            backToTopBtn.style.display = 'none';
-        }
-    });
-
-    // Przewiń do góry po kliknięciu
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    </script>
-	
+    <script src="script.js"></script>
 </body>
 </html>

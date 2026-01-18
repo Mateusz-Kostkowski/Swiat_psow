@@ -105,29 +105,6 @@
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
 	<button id="backToTopBtn" aria-label="Powrót do góry">↑</button>
-    <script>
-        document.getElementById('menuBtn').addEventListener('click', () => {
-            document.getElementById('mainNav').classList.toggle('active');
-        });
-		/* Kod do obsługi przycisku Back to Top */
-    const backToTopBtn = document.getElementById('backToTopBtn');
-    
-    // Pokaż przycisk, gdy użytkownik przewinie stronę w dół o 200px
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
-            backToTopBtn.style.display = 'block';
-        } else {
-            backToTopBtn.style.display = 'none';
-        }
-    });
-
-    // Przewiń do góry po kliknięciu
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

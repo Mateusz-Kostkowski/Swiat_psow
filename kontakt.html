@@ -61,59 +61,6 @@
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
-    <script>
-        // Menu toggle
-        document.getElementById('menuBtn').addEventListener('click', () => {
-            document.getElementById('mainNav').classList.toggle('active');
-        });
-
-        // Walidacja formularza z pliku stary.html
-        const form = document.getElementById('contactForm');
-        
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                let isValid = true;
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const message = document.getElementById('message').value.trim();
-                
-                // Reset errors
-                const nameError = document.getElementById('nameError');
-                const emailError = document.getElementById('emailError');
-                const messageError = document.getElementById('messageError');
-
-                if(nameError) nameError.style.display = 'none';
-                if(emailError) emailError.style.display = 'none';
-                if(messageError) messageError.style.display = 'none';
-                
-                // Walidacja Imienia
-                if (name === '') {
-                    if(nameError) nameError.style.display = 'block';
-                    isValid = false;
-                }
-                
-                // Walidacja Emaila
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    if(emailError) emailError.style.display = 'block';
-                    isValid = false;
-                }
-                
-                // Walidacja Wiadomości
-                if (message === '') {
-                    if(messageError) messageError.style.display = 'block';
-                    isValid = false;
-                }
-                
-                if (isValid) {
-                    alert('Dziękujemy za wiadomość! Skontaktujemy się wkrótce.');
-                    form.reset();
-                }
-            });
-        }
-		
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
