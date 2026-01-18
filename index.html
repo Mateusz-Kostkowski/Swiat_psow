@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Świat Psów - kompleksowy przewodnik po rasach psów, pielęgnacji, żywieniu i zdrowiu.">
     <title>Świat Psów - Przewodnik po Rasach i Podstawy Opieki</title>
+	<link rel="icon" href="IkonaRiki.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -213,7 +214,7 @@
         <p>Autorzy: Mateusz Kostkowski, Jakub Szamik</p>
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
-
+	<button id="backToTopBtn" aria-label="Powrót do góry">↑</button>
     <script>
         // Mobile Menu Script
         document.getElementById('menuBtn').addEventListener('click', () => {
@@ -279,6 +280,26 @@
         document.getElementById('searchInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') performSearch();
         });
+		/* Kod do obsługi przycisku Back to Top */
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    
+    // Pokaż przycisk, gdy użytkownik przewinie stronę w dół o 200px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    // Przewiń do góry po kliknięciu
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
     </script>
+	
 </body>
 </html>

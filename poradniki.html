@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poradniki - Świat Psów</title>
+	<link rel="icon" href="IkonaRiki.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -237,7 +238,7 @@
                     <div style="margin-bottom: 2rem;">
                         <strong style="color: var(--text-dark); font-size: 1.1rem;">3. Wejście do Domu</strong>
                         <p style="margin-top: 0.5rem; font-size: 0.95rem;">
-                            Przed wejściem **schowaj wszystkie potencjalne punkty zapalne**: miski, zabawki, gryzaki. 
+                            Przed wejściem <strong>schowaj wszystkie potencjalne punkty zapalne</strong>: miski, zabawki, gryzaki. 
                             Wprowadź psy do domu w tym samym momencie (lub rezydenta później). Nie zmuszaj ich do interakcji w zamkniętej przestrzeni.
                         </p>
                     </div>
@@ -284,7 +285,7 @@
                 <div style="background-color: #ffebee; border-left: 4px solid #c0392b; padding: 1rem; border-radius: 4px;">
                     <strong style="color: #c0392b; display: block; margin-bottom: 0.5rem;">⚠️ Złota Zasada Bezpieczeństwa</strong>
                     <p style="margin: 0; font-size: 0.95rem;">
-                        **Nigdy, pod żadnym pozorem, nie zostawiaj psa samego z dzieckiem**, nawet jeśli pies jest najłagodniejszy na świecie. 
+                        <strong>Nigdy, pod żadnym pozorem, nie zostawiaj psa samego z dzieckiem</strong>, nawet jeśli pies jest najłagodniejszy na świecie. 
                         Wystarczy chwila nieuwagi, pociągnięcie za ucho czy ogon, by doszło do tragedii. Kontrola dorosłych jest niezbędna.
                     </p>
                 </div>
@@ -325,11 +326,30 @@
         <p>Autorzy: Mateusz Kostkowski, Jakub Szamik</p>
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
-
+	<button id="backToTopBtn" aria-label="Powrót do góry">↑</button>
     <script>
         document.getElementById('menuBtn').addEventListener('click', () => {
             document.getElementById('mainNav').classList.toggle('active');
         });
+		/* Kod do obsługi przycisku Back to Top */
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    
+    // Pokaż przycisk, gdy użytkownik przewinie stronę w dół o 200px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    // Przewiń do góry po kliknięciu
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
     </script>
 </body>
 </html>

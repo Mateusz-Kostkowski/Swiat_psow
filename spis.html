@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spis Ras Psów - Świat Psów</title>
+	<link rel="icon" href="IkonaRiki.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -103,11 +104,30 @@
         <p>Autorzy: Mateusz Kostkowski, Jakub Szamik</p>
         <p>&copy; 2026 Świat Psów. Wszelkie prawa zastrzeżone.</p>
     </footer>
-
+	<button id="backToTopBtn" aria-label="Powrót do góry">↑</button>
     <script>
         document.getElementById('menuBtn').addEventListener('click', () => {
             document.getElementById('mainNav').classList.toggle('active');
         });
+		/* Kod do obsługi przycisku Back to Top */
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    
+    // Pokaż przycisk, gdy użytkownik przewinie stronę w dół o 200px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    // Przewiń do góry po kliknięciu
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
     </script>
 </body>
 </html>

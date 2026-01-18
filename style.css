@@ -827,3 +827,26 @@ footer p {
     flex: 1 1 300px;
     max-width: 100%;
 }
+/* Przycisk Back to Top */
+#backToTopBtn {
+    display: none; /* Domyślnie ukryty */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background: var(--primary-color); /* Używamy Twojego koloru zdefiniowanego w zmiennych */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTopBtn:hover {
+    background: var(--secondary-color); /* Twój kolor dodatkowy */
+    transform: translateY(-3px);
+}
