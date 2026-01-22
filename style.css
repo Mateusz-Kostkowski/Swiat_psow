@@ -91,7 +91,7 @@ nav a:hover, nav a.active {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(44, 95, 45, 0.7), rgba(26, 58, 27, 0.7)), 
-                url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600&q=80') center/cover;
+                url('pieski.png') center/cover;
     color: var(--white);
     padding: 6rem 2rem;
     text-align: center;
